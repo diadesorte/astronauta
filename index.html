@@ -6,13 +6,20 @@
   <title>Astronauta</title>
   <style>
     body {
+      margin: 0;
+      padding: 0;
       background: #000;
       display: flex;
+    }
+
+    [test], [test] * {
+      outline: solid 1px red;
     }
 
     .wrapper {
       position: relative;
       width: 1714px;
+      max-width: 100%;
       margin: 0 auto;
     }
 
@@ -26,8 +33,44 @@
       background: #ffffff22;
     }
 
-    [test], [test] * {
-      outline: solid 1px red;
+    .wrapper img {
+      width: 100%;
+    }
+
+    /* #538efa */
+
+    .pulse {
+      box-shadow: 0 0 0 0 #538efa55;
+      -webkit-animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+      -moz-animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+      -ms-animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+      animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+      transition: all 500ms ease-in-out;
+      border-radius: 5px;
+    }
+
+    @-webkit-keyframes pulse {
+      to {
+        box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+      }
+    }
+
+    @-moz-keyframes pulse {
+      to {
+        box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+      }
+    }
+
+    @-ms-keyframes pulse {
+      to {
+        box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+      }
+    }
+
+    @keyframes pulse {
+      to {
+        box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+      }
     }
   </style>
 </head>
@@ -37,10 +80,10 @@
     <img src="./assets/bg/astronauta-9.90.png" alt="" usemap="#img2" />
   
     <!-- Quero Participar 1 -->
-    <a href="https://google.com" target="_blank" style="top:473px; left:993px; width:231px; height:45px;">&nbsp;</a>
+    <a href="https://bit.ly/3LSfvYu" target="_blank" class="pulse" style="top:19.9%; left:58%; width:13.4%; height:1.9%;">&nbsp;</a>
     
     <!-- Quero Participar 2 -->
-    <a href="https://google.com" target="_blank" style="top:990px; left:789px; width:221px; height:45px;">&nbsp;</a>
+    <a href="https://bit.ly/3LSfvYu" target="_blank" class="pulse" style="top:41.8%; left:46%; width:13%; height:1.9%;">&nbsp;</a>
   </div>
 </body>
 </html>
