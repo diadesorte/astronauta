@@ -4,8 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Astronauta</title>
+  <style>
+    body {
+      background: #000;
+      display: flex;
+    }
+
+    .wrapper {
+      position: relative;
+      width: 1714px;
+      margin: 0 auto;
+    }
+
+    .wrapper a {
+      position: absolute;
+      display: block;
+      color: transparent;
+    }
+    
+    .wrapper a:hover {
+      background: #ffffff22;
+    }
+
+    [test], [test] * {
+      outline: solid 1px red;
+    }
+  </style>
 </head>
 <body>
-  Astronauta
+  <div class="wrapper">
+    <img src="./assets/bg/astronauta.png" alt="" usemap="#img1" />
+    <img src="./assets/bg/astronauta-9.90.png" alt="" usemap="#img2" />
+  
+    <!-- Quero Participar 1 -->
+    <a href="https://google.com" target="_blank" style="top:473px; left:993px; width:231px; height:45px;">&nbsp;</a>
+    
+    <!-- Quero Participar 2 -->
+    <a href="https://google.com" target="_blank" style="top:990px; left:789px; width:221px; height:45px;">&nbsp;</a>
+  </div>
 </body>
 </html>
